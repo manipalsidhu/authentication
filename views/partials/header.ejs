@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Portfolio - Manipal Sidhu</title> -->
+    <link rel="icon" href="/images/logo.svg">
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='@fortawesome/fontawesome-free/css/all.min.css'/>
+  </head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- My Personal Logo -->
+    <a class="navbar-brand" href="/">
+      <img src="/images/logo.png" alt="logo" style="width:40px;">
+    </a>
+    
+    <!-- Navigation Bar Links -->
+    <ul class="navbar-nav">
+      
+      <!-- Home -->
+      <li class="nav-item">
+        <% if (title == "Home") { %>
+          <a class="nav-link active" href="/">
+        <% } else { %>
+          <a class="nav-link" href="/">
+        <% } %>
+          <i class="fas fa-home"></i> Home </a>
+          </a>
+      </li>
+      
+      <!-- Projects -->
+      <li class="nav-item">
+        <% if (title == "Projects") { %>
+          <a class="nav-link active" href="/projects">
+        <% } else { %>
+          <a class="nav-link" href="/projects">
+        <% } %>
+          <i class="fas fa-file-powerpoint"></i> Projects </a>
+          </a>
+      </li>
+      
+      <!-- Services -->
+      <li class="nav-item">
+        <% if (title == "Services") { %>
+          <a class="nav-link active" href="/services">
+        <% } else { %>
+          <a class="nav-link" href="/services">
+        <% } %>
+          <i class="fab fa-servicestack"></i> Services </a>
+          </a>
+      </li>
+
+      <!-- About Me -->
+      <li class="nav-item">
+        <% if (title == "About Me") { %>
+          <a class="nav-link active" href="/about">
+        <% } else { %>
+          <a class="nav-link" href="/about">
+        <% } %>
+          <i class="fas fa-user-tie"></i> About Me </a>
+          </a>
+      </li>
+      
+      <!-- Contact Me -->
+      <li class="nav-item">
+        <% if (title == "Contact Me") { %>
+          <a class="nav-link active" href="/contact">
+        <% } else { %>
+          <a class="nav-link" href="/contact">
+        <% } %>
+          <i class="far fa-address-card"></i> Contact Me </a>
+          </a>
+      </li>
+
+      <!-- Users -->
+      <li class="nav-item">
+        <a class="nav-link" href="/users">Users</a>
+      </li>
+    </ul>
+  </nav>

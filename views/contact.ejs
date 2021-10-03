@@ -1,0 +1,100 @@
+<!-- Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 2nd, 2021 -->
+
+<% include partials/header.ejs %>
+
+<!-- Heading -->
+<h1 class="contactHeading"><%= title %></h1>
+
+<!-- Contact using table -->
+<form action="" method="post">
+  <table class="contactTable">
+
+    <!-- Fields -->
+    <tr>
+      <td class="fieldLabel">First Name:</td>
+      <td><input name="fname" type="text"></td>
+    </tr>
+  
+    <tr>
+      <td class="fieldLabel">Last Name:</td>
+      <td><input name="lname" type="text"></td>
+    </tr>
+    
+    <tr>
+      <td class="fieldLabel">Phone Number:</td>
+      <td><input name="numer" type="text"></td>
+    </tr>
+    
+    <tr>
+      <td class="fieldLabel">Email Address:</td>
+      <td><input name="email" type="text"></td>
+    </tr>
+    
+    <tr>
+      <td class="fieldLabel">Contact me by:</td>
+      <td>
+        <input name="ContactMe" tabindex="1" type="radio" value="Email">Email
+        <input name="ContactMe" tabindex="3" type="radio" value="Phone">Phone
+      </td>
+    </tr>
+    
+    <tr>
+      <td class="fieldLabel">Message:</td>
+    <td>
+      <textarea cols="20" name="TextArea1" rows="2"></textarea>
+    </td>
+    </tr>
+    
+    <tr>
+      <td class="fieldLabel">
+        <input onclick="myFunction ()" name="Submit" tabindex="71" type="submit" value="Send">
+      </td>
+      <td><input name="Reset1" tabindex="73" type="reset" value="Reset"></td>
+    </tr>
+  
+  </table>
+</form>
+
+<!-- Contact information pannel -->
+<div class="contactinfo">
+  
+  <!-- Addrress -->
+  <div class="info">
+    <div class="icon">
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
+
+    <h5>Where To Find Me</h5>
+    <p>
+       1 Dundas St,<br>
+       Toronto, ON<br>
+       M5B 2R8 CA
+       </p>
+  </div>
+
+  <!-- Email -->
+  <div class="info">
+    <div class="icon">
+      <i class="fas fa-at"></i>
+    </div>
+    
+    <h5>Email Me At</h5>
+    <p>msidhu45@my.centennialcollege.ca</p>
+  </div>
+
+  <!-- Phone Number -->
+  <div class="info">
+    <div class="icon">
+      <i class="fas fa-phone-alt"></i>
+    </div>
+
+    <h5>Call Me At</h5>
+    <p>Phone: (+1) 123 456 7890<br>
+      Mobile: (+1) 123 456 7890<br>
+       Fax: (+1) 123 456 7890
+    </p>
+  </div>  
+
+</div> 
+
+<% include partials/footer.ejs %>

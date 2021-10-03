@@ -1,0 +1,149 @@
+/* home */
+
+
+/* Services */
+.services {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service {
+  padding: 30px;
+  
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+#service-title {
+  text-align: center;
+}
+
+/* Projects */
+.projects {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-item {
+  padding: 30px;
+}
+
+#project-title {
+  text-align: center;
+}
+
+.pic {
+  width: 200px;
+  height: 300px;
+  padding-top: 10px;
+}
+
+/* Contact Me */
+.contactHeading {
+  text-align: center;
+  padding-top: 20pxs;
+}
+
+.contactTable {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fieldLabel {
+	text-align: right;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.contactinfo {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+.info {
+  padding: 20px;
+  text-align: center;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* about me */
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about{
+  text-align: center;
+}
+
+#aboutlist{
+  padding-top: 50px;
+  padding-right: 100px;
+}
+
+.mytitle{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.myphoto {
+   float: right;
+   padding-right: 20px;
+}
+
+#resumelink {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* footer */
+  .footer {
+    background: #212529;
+    color: white;
+    text-align: center;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+.footer a { 
+    color: white;
+}
+
+.logo-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 0;
+}
+
+.logo-item {
+  margin: 10px;
+}
+
+.logo-link {
+  padding: 10px;
+}
