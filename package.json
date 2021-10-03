@@ -5,6 +5,10 @@
   "scripts": {
     "start": "node ./server.js"
   },
+  "engines": {
+    "node": "^16.9.1",
+    "npm": "^7.21.1"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "bootstrap": "^5.1.1",
@@ -15,5 +19,18 @@
     "http-errors": "~1.6.3",
     "jquery": "^3.6.0",
     "morgan": "~1.9.1"
-  }
+  },
+  "description": "assignment 1 - portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manipalsidhu/comp229_assignment1.git"
+  },
+  "author": "Manipal Sidhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manipalsidhu/comp229_assignment1/issues"
+  },
+  "homepage": "https://github.com/manipalsidhu/comp229_assignment1#readme"
 }
