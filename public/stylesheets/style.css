@@ -1,5 +1,14 @@
-/* home */
+/* File: style.css Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 2nd, 2021 */
 
+
+/* home */
+.mission {
+  text-align: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 80px;
+}
 
 /* Services */
 .services {
