@@ -3,9 +3,10 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.render('about', { 
-    title: 'About Me',
-    userName: 'Manipal Singh Sidhu'
+  res.render('contact', { 
+    title: 'Contact Me',
+    userName: 'Manipal Singh Sidhu', 
+    displayName: req.user ? req.user.displayName : ''
    });
 });
 
