@@ -1,8 +1,10 @@
+// <!-- File: contacts.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
 
-// create a reference to the model
+//route to the model
 let Contact = require('../models/contacts');
 
 module.exports.displayContactList = (req, res, next) => {
@@ -13,16 +15,17 @@ module.exports.displayContactList = (req, res, next) => {
         }
         else
         {
-            //console.log(ContactList);
             res.render('contacts/list', {title: 'Contacts List', ContactsList: ContactList, displayName: req.user ? req.user.displayName : ''});
         }
     });
 }
 
+// Diplay Contact add page
 module.exports.displayAddPage = (req, res, next) => {
     res.render('contacts/add', {title: 'Add Contact', displayName: req.user ? req.user.displayName : ''})
 }
 
+// processing contact add page
 module.exports.processAddPage = (req, res, next) => {
     let newContact = Contact({
         "Contact_Name": req.body.Contact_Name,
@@ -43,6 +46,7 @@ module.exports.processAddPage = (req, res, next) => {
     });
 }
 
+// display edit contact page
 module.exports.displayEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -59,6 +63,7 @@ module.exports.displayEditPage = (req, res, next) => {
     });
 }
 
+// processing edit contact page
 module.exports.processEditPage = (req, res, next) => {
     let id = req.params.id;
 
@@ -82,6 +87,7 @@ module.exports.processEditPage = (req, res, next) => {
     });
 }
 
+// module to delete contact
 module.exports.performDelete = (req, res, next) => {
     let id = req.params.id;
 

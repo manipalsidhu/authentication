@@ -1,3 +1,5 @@
+// <!-- File: app.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -71,11 +73,11 @@ app.use(passport.session());
 
 // passport user configuration
 
-// create a User Model Instance
+//User Model Instance
 let userModel = require('../models/user');
 let User = userModel.User;
 
-// implement a User Authentication Strategy
+// User Authentication Strategy
 passport.use(User.createStrategy());
 
 // serialize and deserialize the User info

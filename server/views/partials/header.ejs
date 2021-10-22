@@ -1,4 +1,4 @@
-<!-- File: header.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 2nd, 2021 -->
+<!-- File: header.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -81,7 +81,8 @@
           </a>
       </li>
 
-      <!-- Business Contact List -->
+      <!-- Business Contact List is only visible when user authenticate to login-->
+      <% if(typeof displayName == 'string' && displayName) { %>
       <li class="nav-item">
         <% if (title == "Contacts List") { %>
           <a class="nav-link active" href="/contact-list">
@@ -91,7 +92,7 @@
         <i class="far fa-address-book"></i> Contacts List </a>
           </a>
       </li>
-
+      <% } %>
       <!-- Login/Logout View -->
       
       <% if(typeof displayName == 'string' && displayName) { %>

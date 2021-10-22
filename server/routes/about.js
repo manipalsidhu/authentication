@@ -1,3 +1,5 @@
+// <!-- File: about.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 var express = require('express');
 var router = express.Router();
 

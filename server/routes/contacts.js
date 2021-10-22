@@ -1,3 +1,5 @@
+// <!-- File: contacts.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 let express = require('express');
 let router = express.Router();
 let mongoose = require('mongoose');
@@ -7,8 +9,6 @@ let passport = require('passport');
 
 
 // // route to Contacts model
-// let Contact = require('../models/contacts');
-
 let contactsController = require('../controllers/contacts');
 
 // helper function for guard purposes

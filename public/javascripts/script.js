@@ -1,3 +1,5 @@
+// <!-- File: script.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 console.log('Goes to the client side.');
 // IIFE -- Immediately Invoked Function Expression
 (function(){

@@ -1,3 +1,5 @@
+// <!-- File: db.js Created by: Manipal Singh Sidhu - Student Number: 300859319 - Created on: October 22, 2021 -->
+
 module.exports = 
 {
    // "URI": "mongodb://localhost/Business_Contacts_List"
