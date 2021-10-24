@@ -24,7 +24,7 @@ function requireAuth(req, res, next)
 
 
 /* Route Contacts list. */
-router.get('/', contactsController.displayContactList);
+router.get('/', requireAuth, contactsController.displayContactList);
 
 /* Route to display the create Contacts list. */
 router.get('/add', requireAuth, contactsController.displayAddPage);
